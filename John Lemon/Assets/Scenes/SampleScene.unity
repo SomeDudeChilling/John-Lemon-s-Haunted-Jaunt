@@ -427,6 +427,46 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1502278389 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6258508395111240802, guid: 4364605835561469d8bac06b72368c33,
+    type: 3}
+  m_PrefabInstance: {fileID: 3576425280913284247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1502278397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502278389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b2cfb9174a093419d0f8db96a60eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveAction:
+    m_Name: Move
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 44b2027e-9311-4c16-8536-d329568450be
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  turnSpeed: 20
+--- !u!114 &1502278398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502278389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52babab495c214f63bb92170fdae7663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3576425280913284247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -493,7 +533,15 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6258508395111240802, guid: 4364605835561469d8bac06b72368c33,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1502278397}
+    - targetCorrespondingSourceObject: {fileID: 6258508395111240802, guid: 4364605835561469d8bac06b72368c33,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1502278398}
   m_SourcePrefab: {fileID: 100100000, guid: 4364605835561469d8bac06b72368c33, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
