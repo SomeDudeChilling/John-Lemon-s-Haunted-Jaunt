@@ -6,7 +6,7 @@ using UnityEngine;
 public class Observer1 : MonoBehaviour
 {
 public Transform player;
-public GameEnding gameEnding;
+public GameEnding1 gameEnding;
 bool m_IsPlayerInRange;
 
     // Start is called before the first frame update
@@ -28,7 +28,7 @@ bool m_IsPlayerInRange;
             {
                 if(raycastHit.collider.transform == player)
                 {
-                
+                    gameEnding.CaughtPlayer ();
                 }
             }
         }
