@@ -1,21 +1,21 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class WaypointPatrol : MonoBehaviour
 {
-    public NavMeshAgent navMeshAgent;
-    public Transform[] waypoints;
-
-    int m_CurrentWaypointIndex;
-
-    void Start ()
+public NavMeshAgent navMeshAgent;
+public Transform[] waypoints;
+int m_CurrentWaypointIndex;
+    
+    void Start()
     {
-        navMeshAgent.SetDestination (waypoints[0].position);
+        navMeshAgent.SetDestination(waypoints[0].position);
     }
 
-    void Update ()
+    
+    void Update()
     {
         if(navMeshAgent.remainingDistance < navMeshAgent.stoppingDistance)
         {
